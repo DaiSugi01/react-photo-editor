@@ -91,7 +91,7 @@ function App() {
     })
   }
 
-  function getimageStyle() {
+  function getImageStyle() {
     const fliters = options.map(option => {
       return `${option.property}(${option.value}${option.unit})`
     })
@@ -101,7 +101,7 @@ function App() {
 
   return (
     <div className="container">
-      <div className="main-image" style={getimageStyle()} />
+      <div className="main-image" style={getImageStyle()} />
       <div className="sidebar">
         {options.map((option, index) => {
           return (
